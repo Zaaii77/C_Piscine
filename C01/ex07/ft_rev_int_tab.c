@@ -10,7 +10,6 @@ void    ft_swap(int *a, int *b)
 void    ft_rev_int_tab(int *tab, int size)
 {
     int i;
-    int temp;
 
     i = 0;
     while (i <= size / 2)
