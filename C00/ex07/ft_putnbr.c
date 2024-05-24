@@ -7,7 +7,7 @@ void    ft_putchar(char c)
 
 void    ft_putnbr(int nbr)
 {
-    long int n;
+    long n;
 
     n = nbr;
     if (n < 0)
