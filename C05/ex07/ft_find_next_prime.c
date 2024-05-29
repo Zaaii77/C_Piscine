@@ -18,10 +18,13 @@ int ft_is_prime(int nb)
 
 int ft_find_next_prime(int nb)
 {
-    if (nb >= 2147483647 || nb < 0)
+    if (nb >= 2147483647 || nb < -2147483648)
         return (0);
     if (ft_is_prime(nb))
         return (nb);
     else
-        ft_find_next_prime(nb + 1);
+        if (nb < 0)
+            ft_find_next_prime(nb - 1);
+        else    
+            ft_find_next_prime(nb + 1);
 }
