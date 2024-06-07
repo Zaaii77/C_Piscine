@@ -66,8 +66,6 @@ char    *ft_strjoin(char **strs, int size, char *sep)
         result = ft_strcat(result, strs[i++]);
         if (i < size)
             result = ft_strcat(result, sep);
-        if (i == size)
-            result = ft_strcat(result, "\0");
     }
     return (result);
 }
